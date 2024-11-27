@@ -1,0 +1,104 @@
+@import '../styles/variables.scss';
+
+.about {
+    display: flex;
+    margin-top: 12dvh;
+
+    div {
+        flex: 1;
+    }
+
+    .about-content {
+        color: $white;
+        margin: 3dvh 3dvh;
+
+        .about-title {
+            margin-bottom: 3dvh;
+            font-size: 1.7rem;
+        }
+
+        p {
+            margin-bottom: 3dvh;
+            font-size: 1rem;
+        }
+    }
+}
+
+.services {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin-top: 10dvh;
+        margin-bottom: 3dvh;
+        text-align: center;
+        font-size: 1.6rem;
+        color: $primaryBlackDark;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 3dvh;
+        color: $secondaryBlackDark;
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2dvh;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-top: 4dvh;
+
+        .card {
+            box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+            border-radius: 1dvh;
+            overflow: hidden;
+
+            .card-img {
+                transition: transform 0.3s;
+            }
+
+            .card-img:hover {
+                transform: scale(1.1);
+                z-index: 2;
+            }
+
+            .card-content {
+                z-index: 6;
+                display: flex;
+                gap: 10dvh;
+                margin-top: 3dvh;
+                margin-left: 2dvh;
+                margin-bottom: 3dvh;
+
+                span {
+                    color: $primaryBlack;
+                }
+
+                .card-button {
+                    background-color: $lightRed;
+                    border: none;
+                    color:$white;
+                    width: 14dvh;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.location {
+    background-color: $white;
+    padding-top: 7dvh;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 5dvh;
+        color: $terciaryBlack;
+        font-size: 1.6rem;
+    }
+}
