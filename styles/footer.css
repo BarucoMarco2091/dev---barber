@@ -1,1 +1,40 @@
-/*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@keyframes scaleUp {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7dvh;
+  font-size: 1.3rem;
+  color: #fefbff;
+  gap: 2dvh;
+}
+footer .footer-icons i {
+  transition: animation 0.4s;
+}
+footer .footer-icons i:hover {
+  color: #d34040;
+  animation: scaleUp 1s infinite alternate;
+}
+footer .footer-logo {
+  margin-top: 7dvh;
+}
+footer .footer-description p {
+  margin-top: 7dvh;
+  margin-bottom: 3dvh;
+  text-align: center;
+  font-size: 1rem;
+  color: #fefbff;
+}/*# sourceMappingURL=footer.css.map */

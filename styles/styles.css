@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+footer {
+  display: flex;
 }
 
 @keyframes scale {
@@ -38,6 +44,7 @@ nav {
   color: #fefbff;
   gap: 2dvh;
   font-size: 1.3rem;
+  transition: animation 0.4s;
 }
 .container .nav-icons i:hover {
   color: #d34040;
@@ -51,6 +58,7 @@ nav {
   height: 5dvh;
   width: 20dvh;
   font-size: 1rem;
+  transition: border 0.8s;
 }
 
 .header-button button:hover {
@@ -80,9 +88,111 @@ nav {
   width: 27dvh;
   background-color: #D94140;
   border: none;
+  transition: background-color 0.8s;
 }
 .hero .hero-button .hero-button:hover {
   background-color: #b42b2b;
+}
+
+.about {
+  display: flex;
+  margin-top: 12dvh;
+}
+.about div {
+  flex: 1;
+}
+.about .about-content {
+  color: #ffffff;
+  margin: 3dvh 3dvh;
+}
+.about .about-content .about-title {
+  margin-bottom: 3dvh;
+  font-size: 1.7rem;
+}
+.about .about-content p {
+  margin-bottom: 3dvh;
+  font-size: 1rem;
+}
+
+.services {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.services h3 {
+  margin-top: 10dvh;
+  margin-bottom: 3dvh;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #040f1a;
+}
+.services p {
+  text-align: center;
+  margin-top: 3dvh;
+  color: #06090c;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.services .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2dvh;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 4dvh;
+}
+.services .card-grid .card {
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  border-radius: 1dvh;
+  overflow: hidden;
+}
+.services .card-grid .card .card-img {
+  transition: transform 0.3s;
+}
+.services .card-grid .card .card-img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+.services .card-grid .card .card-content {
+  z-index: 6;
+  display: flex;
+  gap: 10dvh;
+  margin-top: 3dvh;
+  margin-left: 2dvh;
+  margin-bottom: 3dvh;
+}
+.services .card-grid .card .card-content span {
+  color: #06121E;
+}
+.services .card-grid .card .card-content .card-button {
+  background-color: #d34040;
+  border: none;
+  color: #ffffff;
+  width: 14dvh;
+  cursor: default;
+}
+
+.location {
+  background-color: #ffffff;
+  padding-top: 7dvh;
+}
+.location h3 {
+  text-align: center;
+  margin-bottom: 5dvh;
+  color: #232224;
+  font-size: 1.6rem;
+}
+
+.whatsapp {
+  display: flex;
+}
+.whatsapp .whatsapp-btn {
+  border-radius: 50%;
+  position: fixed;
+  right: 5dvh;
+  bottom: 5dvh;
+  z-index: 90;
+  max-width: 5dvh;
 }
 
 header {

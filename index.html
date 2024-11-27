@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/whatsapp-button.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
     <title>Dev - Barber</title>
 </head>
+
 <body>
     <header>
         <nav class="container">
-            <div class="nav-icons">
+            <div class="nav-icons" data-aos="fade-down" data-aos-delay="300">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
             </div>
-            <div class="logo">
-                <img src="assets/logo.svg" alt="logo">
+            <div class="logo" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/logo.svg" alt="logo"  data-aos="flip-up"
+                data-aos-delay="300"
+                data-aos-duration="1500">
             </div>
-            <div class="header-button">
+            <div class="header-button" data-aos="fade-down" data-aos-delay="300">
                 <button>Agendar horário</button>
             </div>
         </nav>
@@ -35,7 +46,7 @@
     <main>
         <section class="about">
             <div class="about-picture">
-                <img src="assets/images.svg" alt="">
+                <img src="assets/images.svg" alt="sobre" loading="lazy">
             </div>
             <div class="about-content">
                 <h2 class="about-title">
@@ -51,7 +62,7 @@
             <section class="card-grid">
                 <section class="card">
                     <section class="card-img">
-                        <img src="assets/corte1.png" alt="">
+                        <img src="assets/corte1.png" alt="corte de cabelo" loading="lazy">
                     </section>
                     <section class="card-content">
                         <span>Corte cabelo</span>
@@ -60,7 +71,7 @@
                 </section>
                 <section class="card">
                     <section class="card-img">
-                        <img src="assets/corte2.png" alt="">
+                        <img src="assets/corte2.png" alt="corte de cabelo" loading="lazy">
                     </section>
                     <section class="card-content">
                         <span>Barba completa</span>
@@ -69,7 +80,7 @@
                 </section>
                 <section class="card">
                     <section class="card-img">
-                        <img src="assets/corte3.png" alt="">
+                        <img src="assets/corte3.png" alt="corte de cabelo" loading="lazy">
                     </section>
                     <section class="card-content">
                         <span>Cabelo e barba</span>
@@ -80,10 +91,27 @@
         </section>
         <section class="location">
             <h3>Venha nos conhecer</h3>
-            <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.528273362263!2d-46.55293182541662!3d-23.692821966433588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42342d8532fd%3A0x46ee55e49e87f204!2sShopping%20Metr%C3%B3pole!5e0!3m2!1spt-BR!2sbr!4v1732734398899!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.528273362263!2d-46.55293182541662!3d-23.692821966433588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42342d8532fd%3A0x46ee55e49e87f204!2sShopping%20Metr%C3%B3pole!5e0!3m2!1spt-BR!2sbr!4v1732734398899!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <footer class="footer-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </footer>
+        <footer class="footer-logo">
+            <img src="assets/logo.svg" alt="">
+        </footer>
+        <foooter class="footer-description">
+            <p>Copyright 2023 | Dev Barber - Todos os direitos reservados.</p>
+        </foooter>
+    </footer>
+    <a href="https://api.whatsapp.com/send?phone=5511996221043&text=Quero%20fazer%20um%20agendamento%20hoje!" class="whatsapp-btn" target="_blank"><img src="assets/whatssapp.svg" alt="whatsapp-img" loading="lazy" data-aos="zoom-in-up" data-aos-delay="400"><span>Agende seu horário</span></a>
     <script src="script/script.js"></script>
 </body>
+
 </html>

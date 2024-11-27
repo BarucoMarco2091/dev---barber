@@ -72,6 +72,7 @@
 .services .card-grid .card .card-content .card-button {
   background-color: #d34040;
   border: none;
+  border-radius: 1dvh;
   color: #ffffff;
   width: 14dvh;
   cursor: default;

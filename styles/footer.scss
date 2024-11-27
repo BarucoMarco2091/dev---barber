@@ -1,0 +1,51 @@
+@import '../styles/variables.scss';
+
+// ------ Animações
+
+@keyframes scaleUp {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .footer-icons {
+        display: flex;
+        flex-direction: row;
+        margin-top: 7dvh;
+        font-size: 1.3rem;
+        color: $secondaryWhite;
+        gap: 2dvh;
+
+        i {
+            transition: animation 0.4s;
+        }
+
+        i:hover {
+            color: $lightRed;
+            animation: scaleUp 1s infinite alternate;
+        }
+    }
+
+    .footer-logo {
+        margin-top: 7dvh;
+    }
+
+    .footer-description {
+        p {
+            margin-top: 7dvh;
+            margin-bottom: 3dvh;
+            text-align: center;
+            font-size: 1rem;
+            color: $secondaryWhite;
+        }
+    }
+}
