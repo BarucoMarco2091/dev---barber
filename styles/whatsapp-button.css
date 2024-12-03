@@ -4,7 +4,7 @@
   position: fixed;
   right: 5dvh;
   bottom: 5dvh;
-  z-index: 90;
+  z-index: 6;
   max-width: 5dvh;
   cursor: pointer;
   transition: transform 0.5s;

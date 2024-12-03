@@ -87,4 +87,20 @@
   margin-bottom: 5dvh;
   color: #232224;
   font-size: 1.6rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }/*# sourceMappingURL=main.css.map */

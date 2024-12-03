@@ -16,7 +16,7 @@ footer {
 footer .footer-icons {
   display: flex;
   flex-direction: row;
-  margin-top: 7dvh;
+  margin-top: 3dvh;
   font-size: 1.3rem;
   color: #fefbff;
   gap: 2dvh;
@@ -29,12 +29,70 @@ footer .footer-icons i:hover {
   animation: scaleUp 1s infinite alternate;
 }
 footer .footer-logo {
-  margin-top: 7dvh;
+  margin-top: 3dvh;
+}
+footer .footer-logo .footer-logo img {
+  width: 35dvh;
 }
 footer .footer-description p {
-  margin-top: 7dvh;
+  margin-top: 3dvh;
   margin-bottom: 3dvh;
   text-align: center;
   font-size: 1rem;
   color: #fefbff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icons i {
+    margin-top: 2dvh !important;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh !important;
+  }
+  .footer-description p {
+    margin-top: 2dvh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh;
+  }
 }/*# sourceMappingURL=footer.css.map */

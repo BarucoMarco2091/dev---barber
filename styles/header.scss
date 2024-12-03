@@ -17,6 +17,7 @@ header {
     background-size: cover;
     z-index: -1;
     opacity: 0.9;
+    width: 100%;
 }
 
 nav {
@@ -90,3 +91,31 @@ nav {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .nav-icons {
+        margin-top: 1dvh;
+    }
+
+    .logo img {
+        width: 35dvh;
+    }
+
+    .header-button button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .hero-title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +10,109 @@
   box-sizing: border-box;
 }
 
+@keyframes scaleUp {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
 footer {
   display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer .footer-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3dvh;
+  font-size: 1.3rem;
+  color: #fefbff;
+  gap: 2dvh;
+}
+footer .footer-icons i {
+  transition: animation 0.4s;
+}
+footer .footer-icons i:hover {
+  color: #d34040;
+  animation: scaleUp 1s infinite alternate;
+}
+footer .footer-logo {
+  margin-top: 3dvh;
+}
+footer .footer-logo .footer-logo img {
+  width: 35dvh;
+}
+footer .footer-description p {
+  margin-top: 3dvh;
+  margin-bottom: 3dvh;
+  text-align: center;
+  font-size: 1rem;
+  color: #fefbff;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icons i {
+    margin-top: 2dvh !important;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh !important;
+  }
+  .footer-description p {
+    margin-top: 2dvh !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-logo img {
+    margin-top: 2dvh !important;
+    width: 25dvh;
+  }
+}
 @keyframes scale {
   from {
     transform: translateY(0) scale(1);
   }
   to {
-    transform: translateY(0) scale(1.1);
+    transform: translateY(-8px) scale(1.1);
   }
 }
 header {
@@ -27,6 +121,7 @@ header {
   background-size: cover;
   z-index: -1;
   opacity: 0.9;
+  width: 100%;
 }
 
 nav {
@@ -94,6 +189,29 @@ nav {
   background-color: #b42b2b;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-icons {
+    margin-top: 1dvh;
+  }
+  .logo img {
+    width: 35dvh;
+  }
+  .header-button button {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .hero-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
 .about {
   display: flex;
   margin-top: 12dvh;
@@ -167,6 +285,7 @@ nav {
 .services .card-grid .card .card-content .card-button {
   background-color: #d34040;
   border: none;
+  border-radius: 1dvh;
   color: #ffffff;
   width: 14dvh;
   cursor: default;
@@ -183,16 +302,55 @@ nav {
   font-size: 1.6rem;
 }
 
-.whatsapp {
-  display: flex;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    text-align: center;
+  }
 }
-.whatsapp .whatsapp-btn {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+.whatsapp-btn {
   border-radius: 50%;
   position: fixed;
   right: 5dvh;
   bottom: 5dvh;
-  z-index: 90;
+  z-index: 6;
   max-width: 5dvh;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.whatsapp-btn img {
+  width: 7dvh;
+  transition: transform 0.4s;
+}
+.whatsapp-btn span {
+  visibility: hidden;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  left: -6dvh;
+  top: -15dvh;
+  padding: 1dvh;
+  transition: opacity 0.5s;
+  border-radius: 1dvh;
+}
+
+.whatsapp-btn:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.2);
 }
 
 header {
